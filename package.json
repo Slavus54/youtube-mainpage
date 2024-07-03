@@ -1,0 +1,16 @@
+{
+  "name": "youtube-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel"
+  },
+  "keywords": [],
+  "author": "Slavus54",
+  "license": "NSTU",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

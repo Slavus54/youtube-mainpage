@@ -1,7 +1,6 @@
 {
   "name": "youtube-template",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
   "source": "src/index.html",
   "scripts": {
     "dev": "parcel"

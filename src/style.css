@@ -1,3 +1,69 @@
-h1 {
-    color: red;
+body {
+    text-align: center;
+	overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+	display: none;         
+}
+
+img {
+    margin: .25rem;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    margin: 1rem;
+}
+
+.logo {
+    width: 90px;
+}
+
+.icon {
+    width: min(100%, 2rem);
+    height: min(100%, 2rem);
+}
+
+.head {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.head__item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-search {
+    position: relative;
+    display: flex;
+    height: .4rem;
+    width: 40rem;
+    border: 1px solid gray;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.search-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3rem;
+    border-radius: .5rem;
+    padding: .25rem;
 }

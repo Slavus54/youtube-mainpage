@@ -1,3 +1,8 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+* {
+  font-family: Roboto, sans-serif;
+}
+
 body {
   text-align: center;
   margin: 0;
@@ -42,6 +47,7 @@ button {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-right: 20rem;
   display: flex;
   position: relative;
 }
@@ -66,5 +72,64 @@ button {
   padding: .25rem;
   display: flex;
   position: relative;
+}
+
+.main {
+  width: 100%;
+  margin-left: 12%;
+}
+
+.sidebar {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 12%;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  background-color: inherit;
+  width: .4rem;
+  transition: all .1s ease-in-out;
+}
+
+.sidebar::-webkit-scrollbar:hover {
+  background-color: #909090;
+}
+
+.sidebar__item {
+  padding: 1rem;
+  transition: all .1s ease-in-out;
+}
+
+.sidebar__item:hover {
+  background-color: #f2f2f2;
+  border-radius: .4rem;
+}
+
+.search-btns {
+  justify-content: space-around;
+  width: 50%;
+  display: flex;
+  position: relative;
+}
+
+.search-btns__item {
+  color: #4b4b4b;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border-radius: .4rem;
+  margin: 0;
+  padding: .5rem .8rem;
+  font-size: .85rem;
+  font-weight: 600;
+  transition: all .1s ease-in-out;
+}
+
+.search-btns__item:hover {
+  background-color: #e5e5e5;
 }
 /*# sourceMappingURL=index.2cdaf7bc.css.map */

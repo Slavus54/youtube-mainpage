@@ -41,7 +41,7 @@ button {
     position: relative;
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
 }
 
 .head__item {
@@ -75,9 +75,43 @@ button {
     padding: .25rem;
 }
 
+.search-btns {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 47.5%;
+}
+
+.search-btns__item {
+    font-size: .85rem;
+    font-weight: 600;
+    border-radius: .4rem;
+    color: #4b4b4b;
+    background-color: #f2f2f2;
+    transition: .1s ease-in-out;
+    padding: .5rem .8rem;
+    cursor: pointer;
+    margin: 0;
+}
+
+.search-btns__item:hover:not(.search-btns__item-active) {
+    background-color: #e5e5e5;
+}
+
+.search-btns__item-active {
+    color: #f2f2f2;
+    background-color: black;
+}
+
 .main {
     width: 100%;
     margin-left: 12%;
+}
+
+.window {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
 }
 
 .sidebar {
@@ -104,6 +138,7 @@ button {
 .sidebar__item {
     padding: 1rem;
     transition: .1s ease-in-out;
+    cursor: pointer;
 }
 
 .sidebar__item:hover {
@@ -111,25 +146,62 @@ button {
     background-color: #f2f2f2;
 }
 
-.search-btns {
+.sidebar_headline {
+    text-align: left;
+    cursor: pointer;
+    margin: 1rem 1.5rem;
+}
+
+.cards {
     position: relative;
     display: flex;
-    justify-content: space-around;
-    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.search-btns__item {
-    font-size: .85rem;
-    font-weight: 600;
-    border-radius: .4rem;
-    color: #4b4b4b;
-    background-color: #f2f2f2;
-    transition: .1s ease-in-out;
-    padding: .5rem .8rem;
+.card__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: left;
     cursor: pointer;
-    margin: 0;
+    width: 20%;
 }
 
-.search-btns__item:hover {
-    background-color: #e5e5e5;
+.card__item-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.card__item-preview {
+    width: 18em;
+    height: 11rem;
+    border-radius: .75rem;
+    transition: .1s ease-in-out;
+}
+
+.card__item-preview:hover {
+    border-radius: 0;
+}
+
+.card__item-author {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+}
+
+.card__item-title {
+    font-size: 1rem;
+}
+
+.card__item-description {
+    font-size: .9rem;
 }

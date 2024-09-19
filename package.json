@@ -1,6 +1,5 @@
 {
   "name": "youtube-template",
-<<<<<<< HEAD
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,23 +8,12 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "vite": "^5.4.1"
-  },
-  "dependencies": {
-    "datus.js": "^1.6.8"
-=======
-  "version": "1.0.1",
-  "source": "src/index.html",
-  "scripts": {
-    "dev": "parcel"
-  },
   "keywords": [],
   "author": "Slavus54",
   "license": "NSTU",
   "description": "",
-  "devDependencies": {
-    "parcel": "^2.12.0"
->>>>>>> 28fb5fc9933f3a764b0d38524cbb81a2b880c576
+  "dependencies": {
+    "datus.js": "^1.6.9",
+    "vite": "^5.4.6"
   }
 }

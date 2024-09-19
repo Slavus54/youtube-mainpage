@@ -15,5 +15,8 @@
   "dependencies": {
     "datus.js": "^1.6.9",
     "vite": "^5.4.6"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
   }
 }

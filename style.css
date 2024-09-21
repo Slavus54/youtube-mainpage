@@ -214,10 +214,28 @@ button {
 .card__item-container {
   position: relative;
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   width: 90%;
+}
+
+.card__item-container::after {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: .8;
+    width: 2.5rem;
+    height: 1rem;
+    border-radius: .25rem;
+    font-size: .77rem;
+    padding: .2rem 0rem;
+    content: attr(data-time);
+    color: white;
+    background-color: black;
+    margin-left: .25rem;
 }
 
 .card__item-author {

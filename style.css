@@ -33,14 +33,14 @@ button {
 }
 
 .icon {
-    width: min(100%, 2rem);
-    height: min(100%, 2rem);
+    width: min(100%, 1.5rem);
+    height: min(100%, 1.5rem);
 }
 
 .head {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 90%;
 }
 
@@ -50,7 +50,7 @@ button {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-right: 20rem;
+    margin-left: 2%;
 }
 
 .main-search {
@@ -69,6 +69,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     width: 3.5rem;
     height: 3rem;
     border-radius: .5rem;
@@ -83,13 +84,13 @@ button {
 }
 
 .search-btns__item {
-    font-size: .85rem;
+    font-size: .9rem;
     font-weight: 600;
-    border-radius: .4rem;
+    border-radius: .5rem;
     color: #4b4b4b;
     background-color: #f2f2f2;
     transition: .1s ease-in-out;
-    padding: .5rem .8rem;
+    padding: .4rem .7rem;
     cursor: pointer;
     margin: 0;
 }
@@ -112,6 +113,7 @@ button {
     position: relative;
     display: flex;
     justify-content: space-around;
+    height: 50rem;
 }
 
 .sidebar {
@@ -136,14 +138,21 @@ button {
 }
 
 .sidebar__item {
+    font-size: .85rem;
     padding: 1rem;
     transition: .1s ease-in-out;
     cursor: pointer;
 }
 
 .sidebar__item:hover {
-    border-radius: .4rem;
+    border-radius: .75rem;
     background-color: #f2f2f2;
+}
+
+.sidebar__item-active {
+    border-radius: .75rem;
+    background-color: #f2f2f2;
+    font-weight: 500;
 }
 
 .sidebar_headline {
@@ -167,6 +176,7 @@ button {
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
+  margin-top: .5rem;
 }
 
 .sidebar-subs-item__author {
@@ -185,6 +195,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    margin-left: 1rem;
 }
 
 .card__item {

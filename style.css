@@ -53,14 +53,21 @@ button {
     margin-left: 2%;
 }
 
+.search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .main-search {
     position: relative;
     display: flex;
     height: .4rem;
-    width: 40rem;
+    width: 32rem;
     border: 1px solid gray;
     border-radius: 2.5rem;
-    padding: 1rem;
+    padding: .8rem;
     font-size: 16px;
 }
 
@@ -89,9 +96,10 @@ button {
     border-radius: .5rem;
     color: #4b4b4b;
     background-color: #f2f2f2;
+    cursor: pointer;
+    user-select: none;
     transition: .1s ease-in-out;
     padding: .4rem .7rem;
-    cursor: pointer;
     margin: 0;
 }
 
@@ -128,19 +136,20 @@ button {
 }
 
 .sidebar::-webkit-scrollbar {
-    width: .4rem;
+    width: .45rem;
     background-color: inherit;
     transition: .1s ease-in-out;
 }
 
-.sidebar::-webkit-scrollbar:hover {
-    background-color: #909090;
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: inherit;
 }
 
 .sidebar__item {
     font-size: .85rem;
-    padding: 1rem;
+    padding: .9rem;
     transition: .1s ease-in-out;
+    user-select: none;
     cursor: pointer;
 }
 
@@ -166,7 +175,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 80%;
+  user-select: none;
+  width: 100%;
 }
 
 .sidebar-subs-item {
@@ -176,7 +186,13 @@ button {
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
-  margin-top: .5rem;
+  padding: .5rem;
+  transition: .1s ease-in-out;
+}
+
+.sidebar-subs-item:hover {
+  border-radius: .75rem;
+  background-color: #f2f2f2;
 }
 
 .sidebar-subs-item__author {
@@ -208,6 +224,7 @@ button {
     align-self: center;
     text-align: left;
     cursor: pointer;
+    user-select: none;
     width: 20%;
 }
 

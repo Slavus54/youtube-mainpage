@@ -86,8 +86,9 @@ button {
 .search-btns {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 47.5%;
+    width: min(80%, 58rem);
 }
 
 .search-btns__item {
@@ -100,7 +101,7 @@ button {
     user-select: none;
     transition: .1s ease-in-out;
     padding: .4rem .7rem;
-    margin: 0;
+    margin: .1rem;
 }
 
 .search-btns__item:hover:not(.search-btns__item-active) {
@@ -210,8 +211,7 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-    margin-left: 1rem;
+    width: 90%;
 }
 
 .card__item {
@@ -225,14 +225,14 @@ button {
     text-align: left;
     cursor: pointer;
     user-select: none;
-    width: 20%;
+    width: 20rem;
 }
 
 .card__item-preview {
-  width: 19rem;
-  height: 10.5rem;
-  border-radius: .75rem;
-  transition: .1s ease-in-out;
+    width: 19rem;
+    height: 10.5rem;
+    border-radius: .75rem;
+    transition: .1s ease-in-out;
 }
 
 .card__item-preview:hover {
@@ -240,13 +240,13 @@ button {
 }
 
 .card__item-container {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 90%;
 }
 
 .card__item-container::after {

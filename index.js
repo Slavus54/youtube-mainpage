@@ -7,6 +7,10 @@ const cards = document.querySelectorAll('.card__item-container')
 const date = document.getElementById('date')
 
 const searchButtons = document.querySelectorAll('.search-btns__item')
+const mainInput = document.querySelector('.main-search')
+const searchBtn = document.querySelector('.search-btn')
+
+let inputValue = localStorage.getItem('input') !== null ? JSON.parse(localStorage.getItem('input')) : '' 
 
 cards.forEach(el => {
     el.addEventListener('mousemove', e => {
@@ -35,4 +39,21 @@ searchButtons.forEach(el => {
     })
 })
 
-console.log('Work')
+const onUpdateSearchResult = () => {
+    localStorage.setItem('input', JSON.stringify(inputValue))
+    mainInput.textContent = ''
+}
+
+mainInput.setAttribute('placeholder', inputValue !== '' ? inputValue : 'Введите запрос')
+
+mainInput.addEventListener('input', e => {
+    inputValue = e.target.value
+})
+
+mainInput.addEventListener('keypress', e => {
+    if (e.code === 'Enter') {
+        onUpdateSearchResult()
+    }
+})
+
+searchBtn.addEventListener('click', onUpdateSearchResult)

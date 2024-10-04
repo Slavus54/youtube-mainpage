@@ -10,6 +10,9 @@ const searchButtons = document.querySelectorAll('.search-btns__item')
 const mainInput = document.querySelector('.main-search')
 const searchBtn = document.querySelector('.search-btn')
 
+const accountIcon = document.getElementById('account')
+const accountLabel = document.getElementById('account-label')
+
 let inputValue = localStorage.getItem('input') !== null ? JSON.parse(localStorage.getItem('input')) : '' 
 
 cards.forEach(el => {
@@ -41,7 +44,8 @@ searchButtons.forEach(el => {
 
 const onUpdateSearchResult = () => {
     localStorage.setItem('input', JSON.stringify(inputValue))
-    mainInput.textContent = ''
+    
+    window.location.reload()
 }
 
 mainInput.setAttribute('placeholder', inputValue !== '' ? inputValue : 'Введите запрос')
@@ -57,3 +61,9 @@ mainInput.addEventListener('keypress', e => {
 })
 
 searchBtn.addEventListener('click', onUpdateSearchResult)
+
+accountIcon.addEventListener('click', () => {
+    let openedDisplay = 'block'
+    
+    accountLabel.style.display = accountLabel.style.display !== openedDisplay ? openedDisplay : 'none'
+})

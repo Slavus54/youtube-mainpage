@@ -13,7 +13,7 @@
   "license": "NSTU",
   "description": "",
   "dependencies": {
-    "datus.js": "^1.7.4",
+    "datus.js": "^1.7.5",
     "vite": "^5.4.6"
   },
   "optionalDependencies": {
